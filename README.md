@@ -1,42 +1,47 @@
-# Jinxin Li — Personal Website
+# Dr. Jinxin Li - Physics Research & Scientific Software
 
-A responsive static portfolio adapted from [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio), under the MIT license.
+Static GitHub Pages homepage adapted from [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio), under the retained MIT license. No build, analytics or external runtime is required.
 
-## Preview
+## Pages
 
-Serve this directory with any static HTTP server, for example:
+- `index.html`: introduction, equal Research / Software & AI paths, engineering case studies and CV overview. Existing section anchors remain supported.
+- `research.html`: doctoral motivation, methods, contributions, simulation results, original figures and future interests.
+- `academic-work.html`: dissertation and selected presentations, with internal talks accurately labeled.
+- `professional-cv.html`: current editable public CV and PDF download.
+- `cv.html`: preserved legacy CV, excluded from search indexing and current navigation.
+
+Shared appearance and behavior live in `assets/site.css` and `assets/site.js`; `assets/vcard.css` retains upstream styling. Shared header/sidebar/nav markup is plain HTML in each page: keep its links and profile information consistent when editing.
+
+## Local preview and checks
+
+From this repository directory:
 
 ```sh
-python -m http.server 4173
+python -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open http://localhost:4173. No package installation or build step is required.
+Open http://127.0.0.1:4173/. With Node.js, Playwright and Microsoft Edge available, run `node tests/verify-site.mjs`. This checks links, fragments, downloads, responsive layouts and theme persistence. Review screenshots are written to `docs/screenshots/`. Browser tests are development tools, not website dependencies.
 
-## Publish to GitHub Pages
+## Updating scientific content
 
-In repository Settings → Pages, select **Deploy from a branch**, **main**, **/ (root)**, and Save. The intended URL is https://jinxinlee.github.io/.
+Edit the appropriate study in `research.html`, preserve simulation definitions, and update `docs/RESEARCH_SOURCE_NOTES.md`. Keep software case studies focused on engineering and link them to the matching research anchors. New numerical claims need a chapter/table/figure reference and conditions; distinguish simulation results from experimental data or runtime performance.
 
-## Edit
+Five original figures live in `assets/research/`. Regenerate them with `python scripts/generate-research-figures.py` using only the Python standard library. Preserve values, units, uncertainties and captions; check each figure visually on desktop and mobile. Do not replace a schematic with an invented physical data curve.
 
-- `index.html`: public introduction, projects, research, CV overview and links.
-- `professional-cv.html`: current public CV; browser Print → Save as PDF.
-- `cv.html`: preserved previous CV.
-- `assets/pdf/`: four slide decks, the doctoral thesis and the downloadable two-page CV.
-- `assets/site.css`: custom styling and light/dark theme.
-- `assets/site.js`: scroll-position navigation highlighting and theme preference.
-- `assets/vcard.css`: upstream vCard styling.
-- `assets/favicon.svg`: initials mark.
+## Academic documents and CV
 
-The initials avatar is intentional and can be replaced with an authorized portrait later.
-`professional-cv.html` is the editable public CV. After changing its content, use Print / Save as PDF with A4 paper and save the updated download as `assets/pdf/Jinxin_Li_Professional_CV.pdf`. Check both printed pages before publishing. GitHub Pages serves the PDF as a static asset. The previous HTML and PDF remain unchanged.
-No analytics, external fonts, embedded services or contact-form backend are used.
+Add permitted presentations to `academic-work.html`: exact title, date, event/location, public/internal status and matching PDF path. Confirm redistribution rights before adding collaboration materials. Add formal publications only with verified authorship and venue; no empty Publications or Academic CV page is provided.
 
-## Content provenance
+The existing dissertation and slide URLs under `assets/pdf/` are retained. Edit `professional-cv.html` for CV changes and use Print / Save as PDF with A4 paper to update `assets/pdf/Jinxin_Li_Professional_CV.pdf`; inspect both pages before publication. Preserve academic facts and legacy files. Public pages omit phone, address, birth date, immigration, salary and application data.
 
-Professional facts were checked against the reviewed `cv.md`, `article-digest.md`, `config/profile.yml`, the owner's explicit instructions, the doctoral dissertation and the local PANDA Agent implementation on 2026-10-29.
-Those private source files are not included. This public version omits phone, street address, date of birth, immigration information, salary targets and job-application records.
-No publication list is inferred from collaboration membership.
-The current PANDA Agent card describes architecture and evaluation methodology instead of historical benchmark percentages. Backend technologies describe the implemented project, not independent mastery of each dependency. The sealed-holdout wording describes an evaluation protocol, not a completed blind evaluation.
-Scientific results were checked against dissertation Tables 6.4, 6.6, 7.1, 9.1 and 9.2. The two reconstruction comparisons concern separate simulations. Luminosity deviation belongs to the integrated reconstruction/fitting chain; detector improvements concern simulated physics performance.
-The PANDA Agent description preserves the AI-assisted implementation and architecture/review ownership boundary.
+## GitHub Pages
 
+Production targets https://jinxinlee.github.io/ using the repository's existing Pages configuration (`main`, root). Serve static files directly, including `.nojekyll`. Update sitemap URLs when adding public pages. Pushing a development redesign requires owner approval; the academic redesign task authorizes a local development branch only. No hosting migration or DNS changes are required.
+
+## Evidence and review
+
+- `docs/WEBSITE_BASELINE_AUDIT.md`: starting state.
+- `docs/RESEARCH_SOURCE_NOTES.md`: claims, figures, documents and rights boundaries.
+- `docs/WEBSITE_REDESIGN_REPORT.md`: implementation, QA and remaining review items.
+
+Existing internal slides remain linked under the owner's prior website-publication instruction; institutional redistribution permission was not independently established. No new collaboration images, logos or private documents were introduced.

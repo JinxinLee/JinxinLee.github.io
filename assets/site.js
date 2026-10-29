@@ -6,17 +6,18 @@ let storedTheme;
 try { storedTheme = localStorage.getItem('theme'); } catch {}
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
-  themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
-  themeButton.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-  themeButton.textContent = theme === 'dark' ? '☀' : '☾';
+  themeButton?.setAttribute('aria-pressed', String(theme === 'dark'));
+  themeButton?.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+  if (themeButton) themeButton.textContent = theme === 'dark' ? '☀' : '☾';
 }
 setTheme(storedTheme === 'dark' ? 'dark' : 'light');
-themeButton.addEventListener('click', () => {
+themeButton?.addEventListener('click', () => {
   const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
   setTheme(theme);
   try { localStorage.setItem('theme', theme); } catch {}
 });
 function updateNavigation() {
+  if (!pages.length || !document.querySelector('.navbar')) return;
   const threshold = document.querySelector('.navbar').getBoundingClientRect().bottom + 80;
   let current = pages[0].dataset.page;
   for (const page of pages) {
