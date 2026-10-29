@@ -163,3 +163,7 @@ article[data-page]+article[data-page]{margin-top:26px}
 .reading-page .article-title{line-height:1.4}
 .main-content>article{display:block;scroll-margin-top:105px}
 [id$="-project-title"]{scroll-margin-top:110px}
+
+/* Consistent decorative icons for the expertise cards. */
+.service-symbol{display:flex;align-items:center;justify-content:center;width:36px;height:36px}
+.service-symbol svg{display:block;width:32px;height:32px;flex:none}
