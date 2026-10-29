@@ -16,35 +16,15 @@ themeButton?.addEventListener('click', () => {
   setTheme(theme);
   try { localStorage.setItem('theme', theme); } catch {}
 });
-function updateNavigation() {
-  if (!pages.length || !document.querySelector('.navbar')) return;
-  const threshold = document.querySelector('.navbar').getBoundingClientRect().bottom + 80;
-  let current = pages[0].dataset.page;
-  for (const page of pages) {
-    if (page.getBoundingClientRect().top <= threshold) current = page.dataset.page;
-  }
-  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
-    current = pages.at(-1).dataset.page;
-  }
-  for (const link of links) {
-    const selected = link.dataset.pageLink === current;
-    link.classList.toggle('active', selected);
-    if (selected) link.setAttribute('aria-current', 'location');
-    else link.removeAttribute('aria-current');
-  }
+// Preserve bookmarks from the former continuous homepage.
+if (location.pathname.endsWith('/') || location.pathname.endsWith('/index.html')) {
+  const legacyPages = {
+    projects: 'software.html', cv: 'cv-overview.html', research: 'research.html',
+    'agent-project-title': 'software.html#agent-project-title',
+    'luminosityfit-project-title': 'software.html#luminosityfit-project-title',
+    'reconstruction-project-title': 'software.html#reconstruction-project-title',
+    'simulation-project-title': 'software.html#simulation-project-title'
+  };
+  const destination = legacyPages[location.hash.slice(1)];
+  if (destination) location.replace(destination);
 }
-let scheduled = false;
-function scheduleNavigationUpdate() {
-  if (scheduled) return;
-  scheduled = true;
-  requestAnimationFrame(() => {
-    updateNavigation();
-    scheduled = false;
-  });
-}
-window.addEventListener('scroll', scheduleNavigationUpdate, { passive: true });
-window.addEventListener('resize', scheduleNavigationUpdate);
-window.addEventListener('hashchange', scheduleNavigationUpdate);
-window.addEventListener('load', scheduleNavigationUpdate);
-updateNavigation();
-

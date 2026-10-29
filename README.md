@@ -4,13 +4,15 @@ Static GitHub Pages homepage adapted from [vCard by codewithsadee](https://githu
 
 ## Pages
 
-- `index.html`: introduction, equal Research / Software & AI paths, engineering case studies and CV overview. Existing section anchors remain supported.
+- `index.html`: Home card, introduction and equal Research / Software & AI entry points.
+- `software.html`: dedicated Software & AI card and engineering case studies.
+- `cv-overview.html`: CV card with experience, education, and online/PDF actions.
 - `research.html`: doctoral motivation, methods, contributions, simulation results, original figures and future interests.
 - `academic-work.html`: dissertation and selected presentations, with internal talks accurately labeled.
 - `professional-cv.html`: current editable public CV and PDF download.
 - `cv.html`: preserved legacy CV, excluded from search indexing and current navigation.
 
-Shared appearance and behavior live in `assets/site.css` and `assets/site.js`; `assets/vcard.css` retains upstream styling. Shared header/sidebar/nav markup is plain HTML in each page: keep its links and profile information consistent when editing.
+Shared appearance and behavior live in `assets/site.css` and `assets/site.js`; `assets/vcard.css` retains upstream styling. Each of the five navigation destinations opens its own content card with the same sidebar and active-page navigation. Shared header/sidebar/nav markup is plain HTML in each page: keep its links and profile information consistent when editing. Old homepage bookmarks for projects, research and CV redirect to their new pages.
 
 ## Local preview and checks
 

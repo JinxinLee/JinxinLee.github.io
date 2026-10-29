@@ -161,3 +161,5 @@ article[data-page]+article[data-page]{margin-top:26px}
 .sidebar .info-content .title{width:auto;max-width:100%;white-space:normal;overflow-wrap:anywhere}
 .pathway h3 span,.section-intro a,.reading-page p a,.related-links a,.project-crosslinks a{display:inline}
 .reading-page .article-title{line-height:1.4}
+.main-content>article{display:block;scroll-margin-top:105px}
+[id$="-project-title"]{scroll-margin-top:110px}

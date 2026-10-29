@@ -54,3 +54,7 @@ The current CV PDF, legacy PDF, thesis and four original slides were not changed
 - No verified formal publication records were supplied; the page is correctly titled Dissertation & Presentations.
 - Future generator tuning is labeled an interest, not an established achievement. PANDA Agent remains a local paused research prototype.
 - The live production website was not changed or operationally revalidated during this local redesign.
+
+## Follow-up: consistent navigation cards
+
+The owner requested all remaining navigation areas match the standalone Research card. Home now contains only its own introduction card; engineering moved to `software.html` and the CV overview moved to `cv-overview.html`. All five nav destinations share the same layout, exactly one visible article and `aria-current="page"` highlighting. Research-to-software links and CV back links point directly to the new pages. Former homepage hashes redirect to their equivalents; standalone pages remain usable without JavaScript. Sitemap and README updated. The browser suite now covers six HTML pages at five viewports, including the professional print CV, and legacy-hash redirects. No PDF or scientific claim changed.

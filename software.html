@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software &amp; AI | Dr. Jinxin Li</title>
+  <meta name="description" content="Scientific software and AI engineering: PANDA Agent, LuminosityFit, particle reconstruction and detector simulation.">
+  <meta name="theme-color" content="#145b56">
+  <meta property="og:title" content="Software &amp; AI | Dr. Jinxin Li">
+  <meta property="og:description" content="Scientific software and AI engineering: PANDA Agent, LuminosityFit, particle reconstruction and detector simulation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jinxinlee.github.io/software.html">
+  <link rel="canonical" href="https://jinxinlee.github.io/software.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/vcard.css">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="page-top"><a class="wordmark" href="index.html" aria-label="Dr. Jinxin Li home">JL<span class="wordmark-dot">.</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" aria-pressed="false">☾</button></div>
+<main>
+  <aside class="sidebar" aria-label="Personal profile">
+    <div class="sidebar-info">
+      <div class="avatar-box" aria-hidden="true"><span class="initials">JL</span><span class="avatar-orbit"></span></div>
+      <div class="info-content"><p class="profile-eyebrow">PHYSICS · SOFTWARE · AI</p><h1 class="name">Dr. Jinxin Li</h1><p class="title">Experimental Particle Physicist &amp; Scientific Software Engineer</p></div>
+    </div>
+    <div class="sidebar-info_more">
+      <div class="separator"></div>
+      <ul class="contacts-list">
+        <li class="contact-item"><div class="icon-box" aria-hidden="true">@</div><div class="contact-info"><p class="contact-title">Email</p><a class="contact-link" href="mailto:jinxin@ep1.rub.de">jinxin@ep1.rub.de</a></div></li>
+        <li class="contact-item"><div class="icon-box" aria-hidden="true">⌖</div><div class="contact-info"><p class="contact-title">Based in</p><address>Göttingen, Germany</address></div></li>
+        <li class="contact-item"><div class="icon-box" aria-hidden="true">↗</div><div class="contact-info"><p class="contact-title">Background</p><p class="contact-link">Dr. rer. nat. in Physics</p></div></li>
+      </ul>
+      <div class="separator"></div>
+      <div class="profile-links"><a href="https://github.com/JinxinLee">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jinxin-li-896450300">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      <a class="button sidebar-cv" href="professional-cv.html">View my CV <span aria-hidden="true">↗</span></a>
+      <p class="sidebar-note">Scientific curiosity.<br>Carefully validated software.</p>
+    </div>
+  </aside>
+  <div class="main-content" id="main-content" tabindex="-1">
+    <nav class="navbar" aria-label="Main navigation"><ul class="navbar-list"><li><a class="navbar-link" href="index.html">Home</a></li><li><a class="navbar-link" href="research.html">Research</a></li><li><a class="navbar-link active" aria-current="page" href="software.html">Software &amp; AI</a></li><li><a class="navbar-link" href="academic-work.html">Academic Work</a></li><li><a class="navbar-link" href="cv-overview.html">CV</a></li></ul></nav>
+    <article id="projects" aria-labelledby="projects-title" tabindex="-1">
+      <header><p class="eyebrow">SELECTED WORK</p><h2 class="h2 article-title" id="projects-title">Software &amp; AI</h2></header>
+      <p class="section-intro">Engineering contributions to research software and AI systems: architecture, framework maintenance, algorithm integration and reproducible validation. Explore the scientific questions and interpretation on the <a href="research.html">Research page</a>.</p>
+      <div class="project-grid">
+        <section class="project-card agent-card" aria-labelledby="agent-project-title">
+          <header class="project-header"><div><p class="eyebrow">LOCAL RESEARCH PROTOTYPE · INDEPENDENT PROJECT · APR. 2026 — PRESENT</p><h3 id="agent-project-title">PANDA Agent</h3><p>AI research assistant &amp; code intelligence</p></div><a class="button" href="https://github.com/JinxinLee/PANDA_Agent">View repository <span aria-hidden="true">↗</span></a></header>
+          <div class="project-layout">
+            <div class="project-copy"><dl class="project-details"><dt>Problem</dt><dd>Help researchers navigate scientific code, papers and documentation across repositories, with version context and traceable evidence.</dd><dt>My contribution</dt><dd>Architected version-aware ingestion, hybrid dense/BM25 retrieval, reranking and evidence verification. Designed and integrated Python backend workflows with LangGraph, FastAPI, PostgreSQL and Qdrant through AI-assisted development, retaining requirements, review and technical acceptance ownership.</dd></dl><p class="project-status">Current scope: read-only, single-turn local prototype. Phase G development is paused; expert review remains necessary. A sealed-holdout protocol is not a completed blind evaluation.</p><div class="tags"><span>AI agents</span><span>RAG</span><span>Hybrid retrieval</span><span>Evaluation</span></div><p class="project-crosslinks"><a href="research.html#interests">AI-assisted scientific computing →</a> · <a href="academic-work.html#dissertation">Scientific context</a></p></div>
+            <section class="project-evaluation" aria-label="PANDA Agent evaluation"><h4>Benchmark design</h4><p>Designed versioned, human-reviewed benchmarks with separate development and validation datasets and an externally managed sealed-holdout protocol.</p><div class="evaluation-heading"><h4>Evaluation workflow</h4></div><ul class="validation-checks"><li>Reproducible retrieval and question-answering evaluation</li><li>Controlled ablations and regression checks</li><li>Structured execution traces and runtime diagnostics</li><li>Systematic failure analysis and technical review</li></ul></section>
+          </div>
+        </section>
+        <section class="project-card" aria-labelledby="luminosityfit-project-title">
+          <header class="project-header"><div><p class="eyebrow">DOCTORAL WORK · MAR. 2022 — JUL. 2024</p><h3 id="luminosityfit-project-title">LuminosityFit</h3><p>C++ framework development & integration</p></div><a class="button" href="research.html#luminosity">Research context <span aria-hidden="true">→</span></a></header>
+          <div class="project-layout">
+            <div class="project-copy"><dl class="project-details"><dt>Problem</dt><dd>Extend an existing luminosity-analysis framework to handle a spatially distributed interaction region and realistic beam conditions.</dd><dt>My contribution</dt><dd>Served as technical owner and primary maintainer. Developed fitting workflows, debugged failures, documented assumptions and integrated functionality with PandaRoot.</dd></dl><div class="tags"><span>C++</span><span>Framework maintenance</span><span>Integration</span></div></div>
+            <section class="project-evaluation" aria-label="LuminosityFit evaluation"><h4>Validation approach</h4><p>Integrated reconstructed target distributions into an end-to-end reconstruction and fitting chain, then compared the result with simulated ground truth.</p><div class="evaluation-heading"><h4>Simulation results</h4></div><ul class="evaluation-metrics"><li class="metric-wide"><strong>(0.05 ± 0.07)%</strong><span>Relative luminosity deviation</span></li></ul><p class="result-context">Result of the integrated analysis chain under the studied simulation conditions. Dissertation, Table 9.2.</p></section>
+          </div><p class="project-crosslinks"><a class="text-link" href="research.html#luminosity">Physics research →</a> · <a class="text-link" href="academic-work.html#dissertation">Dissertation</a> · <a class="text-link" href="https://github.com/JinxinLee/LuminosityFit">GitHub ↗</a></p>
+        </section>
+        <section class="project-card" aria-labelledby="reconstruction-project-title">
+          <header class="project-header"><div><p class="eyebrow">DOCTORAL WORK · JUL. 2024 — APR. 2026</p><h3 id="reconstruction-project-title">Reconstruction</h3><p>Iterative correction & profile measurement</p></div><a class="button" href="research.html#reconstruction">Research context <span aria-hidden="true">→</span></a></header>
+          <div class="project-layout">
+            <div class="project-copy"><dl class="project-details"><dt>Problem</dt><dd>Reconstruct particle trajectories and interaction positions away from the nominal collision point, then correct the measured spatial distribution for detector effects.</dd><dt>My contribution</dt><dd>Developed the POCA-First / POCA-to-point workflow and simulation-based iterative corrections. Integrated existing tracking and GenFit/Kalman fitting components.</dd></dl><div class="tags"><span>C++</span><span>Algorithm development</span><span>Simulation</span><span>Validation</span></div></div>
+            <section class="project-evaluation" aria-label="Reconstruction evaluation"><h4>Validation approach</h4><p>Compared reconstructed vertices with a true-vertex reference in a controlled displaced-interaction simulation; tested iterative profile correction in a separate stress test.</p><div class="evaluation-heading"><h4>Simulation results</h4></div><ul class="evaluation-metrics"><li><strong>74.4%</strong><span>Reconstructed-vertex efficiency</span></li><li><strong>74.2%</strong><span>True-vertex reference efficiency</span></li><li><strong>12.27%</strong><span>Global discrepancy · iteration 1</span></li><li><strong>1.30%</strong><span>Global discrepancy · iteration 3</span></li></ul><p class="result-context">Reconstruction efficiency: Table 7.1. Global profile discrepancy: Table 9.1. These are separate simulation studies.</p></section>
+          </div><p class="project-crosslinks"><a class="text-link" href="research.html#reconstruction">Physics research →</a> · <a class="text-link" href="academic-work.html#dissertation">Dissertation</a> · <a class="text-link" href="https://github.com/JinxinLee/RestgasDetermination">GitHub ↗</a></p>
+        </section>
+        <section class="project-card" aria-labelledby="simulation-project-title">
+          <header class="project-header"><div><p class="eyebrow">DOCTORAL WORK · SEP. 2019 — MAR. 2022</p><h3 id="simulation-project-title">Detector Simulation</h3><p>Geometry modeling & performance evaluation</p></div><a class="button" href="research.html#detectors">Research context <span aria-hidden="true">→</span></a></header>
+          <div class="project-layout">
+            <div class="project-copy"><dl class="project-details"><dt>Problem</dt><dd>Evaluate an alternative silicon-sensor geometry against the baseline detector design before physical implementation.</dd><dt>My contribution</dt><dd>Designed and implemented simulated HV-MAPS micro vertex detector geometry in PandaRoot, then compared tracking, vertex and momentum resolution and event reconstruction.</dd></dl><div class="tags"><span>PandaRoot</span><span>Monte Carlo</span><span>Performance analysis</span></div></div>
+            <section class="project-evaluation" aria-label="Detector Simulation evaluation"><h4>Validation approach</h4><p>Benchmarked the simulated HV-MAPS geometry against the baseline detector design using the same physics channel and reconstruction selection.</p><div class="evaluation-heading"><h4>Simulation results</h4></div><ul class="evaluation-metrics"><li><strong>2.8×</strong><span>D-meson reconstruction efficiency · 3.33% to 9.26%</span></li><li><strong>44–52%</strong><span>Smaller primary-vertex resolution widths</span></li></ul><p class="result-context">Detector-design comparison across three coordinate axes; these are simulation outcomes, not software runtime gains. Dissertation, Tables 6.4 and 6.6.</p></section>
+          </div><p class="project-crosslinks"><a class="text-link" href="research.html#detectors">Physics research →</a> · <a class="text-link" href="academic-work.html#dissertation">Dissertation</a></p>
+        </section>
+      </div>
+    </article>    <footer class="page-footer"><span>Dr. Jinxin Li · Göttingen, Germany</span><span>Built with care · Based on <a href="https://github.com/codewithsadee/vcard-personal-portfolio">vCard</a></span></footer>
+  </div>
+</main>
+<noscript><style>.theme-toggle{display:none}</style></noscript>
+</body>
+</html>

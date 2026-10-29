@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const artifacts = fileURLToPath(new URL('../docs/screenshots/', import.meta.url));
 await fs.mkdir(artifacts, { recursive: true });
-const names = ['index.html', 'research.html', 'academic-work.html', 'professional-cv.html'];
+const names = ['index.html', 'research.html', 'software.html', 'academic-work.html', 'cv-overview.html', 'professional-cv.html'];
 const browser = await chromium.launch({ headless: true, channel: 'msedge' });
 const errors = [], localTargets = new Set();
 try {
@@ -23,7 +23,8 @@ try {
     assert.equal(await page.locator('h1').count(), 1);
     if (name !== 'professional-cv.html') {
       assert.equal(await page.locator('.navbar a').count(), 5);
-      if (name !== 'index.html') assert.equal(await page.locator('.navbar [aria-current="page"]').count(), 1);
+      assert.equal(await page.locator('.navbar [aria-current="page"]').count(), 1);
+      assert.equal(await page.locator('article:visible').count(), 1, `One content card per page: ${name}`);
     }
   }
   for (const url of localTargets) {
@@ -69,18 +70,22 @@ try {
   await page.setViewportSize({width:390,height:844});
   await page.goto('http://127.0.0.1:4173/research.html');
   await page.screenshot({path:path.join(artifacts,'research-mobile.png')});
-  await page.goto('http://127.0.0.1:4173/index.html#projects');
+  await page.goto('http://127.0.0.1:4173/software.html');
   await page.screenshot({path:path.join(artifacts,'software-mobile.png')});
   await page.setViewportSize({width:1440,height:900});
   await page.goto('http://127.0.0.1:4173/academic-work.html');
   await page.screenshot({path:path.join(artifacts,'academic-work.png')});
   assert.equal(await page.locator('.talk-list li').count(),4);
   const download=page.waitForEvent('download');
-  await page.goto('http://127.0.0.1:4173/index.html#cv');
+  await page.goto('http://127.0.0.1:4173/cv-overview.html');
   await page.locator('.cv-banner a[download]').click();
   assert.equal((await download).suggestedFilename(),'Jinxin_Li_Professional_CV.pdf');
+  for (const [hash, target] of [['projects','software.html'],['cv','cv-overview.html'],['research','research.html']]) {
+    await page.goto('http://127.0.0.1:4173/index.html#'+hash);
+    await page.waitForURL('**/'+target);
+  }
   const noJS = await browser.newPage({javaScriptEnabled:false});
   for (const name of names) { await noJS.goto('http://127.0.0.1:4173/'+name); assert.ok(await noJS.locator('main').isVisible()); }
   assert.deepEqual(errors,[]);
-  console.log(`PASS: ${localTargets.size} local link/asset targets; four pages at five viewports; IDs, images, PDF download, deep links, theme persistence, no-JS and console checks. Screenshots: ${artifacts}`);
+  console.log(`PASS: ${localTargets.size} local link/asset targets; six pages at five viewports; IDs, images, PDF download, deep links, theme persistence, no-JS and console checks. Screenshots: ${artifacts}`);
 } finally { await browser.close(); }
