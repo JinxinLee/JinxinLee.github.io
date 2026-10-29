@@ -167,3 +167,9 @@ article[data-page]+article[data-page]{margin-top:26px}
 /* Consistent decorative icons for the expertise cards. */
 .service-symbol{display:flex;align-items:center;justify-content:center;width:36px;height:36px}
 .service-symbol svg{display:block;width:32px;height:32px;flex:none}
+
+/* Opportunities: academic and industry interests with secondary location. */
+.opportunity-note .opportunity-label{display:block;font-size:10px;letter-spacing:1.5px;color:var(--accent);margin-bottom:9px}
+.opportunity-note .opportunity-copy{margin:12px 0}
+.opportunity-note strong{color:var(--white-2)}
+.opportunity-note .opportunity-location{font-size:12px;color:var(--light-gray-70);margin:16px 0 0}
