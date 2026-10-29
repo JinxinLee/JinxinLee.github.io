@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Public professional CV of Dr. Jinxin Li, Physicist & Software Engineer.">
+  <title>Dr. Jinxin Li | Physicist &amp; Software Engineer</title>
+  <style>
+    :root { color-scheme: light; --ink: #243b35; --teal: #145b56; --muted: #53675f; --line: #d8e4df; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #eef2ef; color: var(--ink); font: 10.5pt/1.28 Arial, Helvetica, sans-serif; }
+    .toolbar { max-width: 210mm; margin: 22px auto; padding: 0 18mm; display: flex; gap: 24px; align-items: center; }
+    .toolbar button { border: 0; border-radius: 5px; padding: 9px 14px; color: white; background: var(--teal); font: inherit; cursor: pointer; }
+    a { color: var(--teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+    main { width: 210mm; margin: 0 auto 28px; }
+    .page { background: white; padding: 15mm 17mm; margin-bottom: 20px; box-shadow: 0 2px 12px #183e3010; }
+    h1 { margin: 0 0 3pt; font-size: 27pt; line-height: 1.1; letter-spacing: -.6pt; }
+    .identity { margin: 0; font-size: 14pt; font-weight: 600; }
+    .focus { margin: 4pt 0 8pt; color: var(--teal); font-size: 10.5pt; }
+    .contacts { margin: 0; font-size: 9pt; line-height: 1.5; }
+    h2 { margin: 9pt 0 6pt; padding-bottom: 4pt; border-bottom: 1px solid var(--line); color: var(--teal); font-size: 11pt; line-height: 1.2; }
+    h3 { margin: 10pt 0 3pt; font-size: 11pt; line-height: 1.3; }
+    p { margin: 5pt 0; }
+    .meta { color: var(--muted); font-size: 9.2pt; line-height: 1.4; margin: 2pt 0 6pt; }
+    ul { margin: 5pt 0 0; padding-left: 14pt; }
+    li { padding-left: 2pt; margin: 0 0 2.5pt; }
+    .skills p { margin: 4pt 0; }
+    .project, .experience, .education-entry, .early-entry { break-inside: avoid; }
+    .continued { margin-top: 0; }
+    .early-entry h3 { margin-top: 8pt; font-size: 10.5pt; }
+    .early-entry p { margin: 2pt 0; }
+    .early-entry .meta { margin-bottom: 2pt; }
+    .education-entry h3 { margin-top: 8pt; }
+    @page { size: A4; margin: 14mm 17mm; }
+    @media print {
+      body { background: white; }
+      .toolbar { display: none; }
+      main { width: auto; margin: 0; }
+      .page { padding: 0; margin: 0; box-shadow: none; }
+      .page + .page { break-before: page; }
+      h2, h3 { break-after: avoid; }
+      p, li { orphans: 2; widows: 2; }
+      a { color: inherit; }
+    }
+    @media screen and (max-width: 800px) {
+      main { width: auto; margin: 12px; }
+      .page { padding: 24px; }
+      .toolbar { padding: 0 24px; flex-wrap: wrap; }
+      h1 { font-size: 25pt; }
+      .contacts { overflow-wrap: anywhere; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="CV actions">
+    <a href="./#cv">Back to website</a>
+    <a href="assets/pdf/Jinxin_Li_Professional_CV.pdf" download>Download PDF</a>
+    <button type="button" onclick="window.print()">Print / Save as PDF</button>
+  </nav>
+  <main>
+    <div class="page">
+      <header>
+        <h1>Dr. Jinxin Li</h1>
+        <p class="identity">Physicist &amp; Software Engineer</p>
+        <p class="focus">Scientific Computing · C++ / Python · AI Systems</p>
+        <p class="contacts">Göttingen, Germany · Open to relocation · <a href="mailto:jinxin@ep1.rub.de">jinxin@ep1.rub.de</a><br>
+          <a href="https://github.com/JinxinLee">github.com/JinxinLee</a> · <a href="https://www.linkedin.com/in/jinxin-li-896450300">linkedin.com/in/jinxin-li-896450300</a></p>
+      </header>
+
+      <section aria-labelledby="profile">
+        <h2 id="profile">Professional Profile</h2>
+        <p>Experimental particle physicist and software engineer with nearly seven years of scientific software and research experience using C++ and Python. Combines quantitative reasoning with simulation, reconstruction, statistical analysis, algorithm design and framework maintenance in Linux/HPC environments. Extends this foundation into AI systems through PANDA Agent, a research assistant connecting code-aware retrieval, backend workflows and systematic evaluation, with ownership of architecture, requirements and technical acceptance.</p>
+      </section>
+
+      <section class="skills" aria-labelledby="skills">
+        <h2 id="skills">Technical Skills</h2>
+        <p><strong>Programming &amp; engineering:</strong> C++, Python, Bash/Shell; object-oriented design, Git, Linux, Docker, debugging, integration, automated testing and regression validation.</p>
+        <p><strong>Scientific computing &amp; HPC:</strong> ROOT, PandaRoot, FairRoot, NumPy, Pandas, Scikit-learn, SLURM, Singularity; Monte Carlo simulation and statistical analysis.</p>
+        <p><strong>AI systems:</strong> RAG, hybrid dense/BM25 retrieval, reranking, evidence grounding and evaluation.</p>
+        <p><strong>Backend project exposure:</strong> LangGraph, FastAPI / REST APIs, PostgreSQL, Qdrant, SQLAlchemy.</p>
+        <p><strong>Languages:</strong> Chinese (Native), English (Proficient), German (CEFR A2).</p>
+      </section>
+
+      <section class="experience" aria-labelledby="experience">
+        <h2 id="experience">Professional Experience</h2>
+        <h3>Doctoral Researcher / Scientific Software Developer</h3>
+        <p class="meta">Ruhr University Bochum - Institute of Experimental Physics I, PANDA Collaboration<br>Sep. 2019 - Jul. 2026 · Bochum, Germany</p>
+        <ul>
+          <li>Developed C++ and Python software for particle tracking, detector simulation, reconstruction and data analysis in Linux/HPC environments.</li>
+          <li>Served as Software Owner for the PANDA Luminosity Detector Group, maintaining, debugging and integrating scientific software.</li>
+          <li>Contributed functionality, reconstruction extensions and bug fixes to PandaRoot through collaborative, cross-component development.</li>
+          <li>Established automated validation and technical documentation; delivered training and mentored undergraduate thesis work.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="projects">
+        <h2 id="projects">Selected Engineering Projects</h2>
+        <article class="project">
+          <h3>PANDA Agent - AI Research Assistant &amp; Code Intelligence</h3>
+          <p class="meta">Apr. 2026 - Present · Independent project · <a href="https://github.com/JinxinLee/PANDA_Agent">github.com/JinxinLee/PANDA_Agent</a></p>
+          <ul>
+            <li>Architected a local research prototype with version-aware code and literature ingestion, cross-repository hybrid dense/BM25 retrieval, reranking and citation verification.</li>
+            <li>Designed and integrated Python backend workflows with LangGraph, FastAPI, PostgreSQL and Qdrant through AI-assisted development, retaining requirements, review and technical acceptance ownership.</li>
+            <li>Designed versioned, human-reviewed benchmarks with separate development and validation datasets and an externally managed sealed-holdout protocol.</li>
+            <li>Established reproducible retrieval/QA evaluation, controlled ablations and regression checks, with structured execution traces and diagnostics for failure analysis.</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+
+    <div class="page">
+      <section aria-labelledby="projects-continued">
+        <h2 id="projects-continued" class="continued">Selected Engineering Projects (continued)</h2>
+        <article class="project">
+          <h3>LuminosityFit - C++ Framework Development</h3>
+          <p class="meta">Mar. 2022 - Jul. 2024 · Doctoral research</p>
+          <ul>
+            <li>Primary maintainer and technical owner of an existing C++ fitting framework; extended numerical workflows for distributed interaction regions and beam parameters, with debugging and PandaRoot integration.</li>
+            <li>Integrated reconstructed target distributions into an end-to-end reconstruction and fitting chain, achieving <strong>(0.05 ± 0.07)% relative luminosity deviation</strong> from simulated ground truth under the studied conditions.</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Particle Reconstruction &amp; Iterative Correction</h3>
+          <p class="meta">Jul. 2024 - Apr. 2026 · Doctoral research</p>
+          <ul>
+            <li>Developed a POCA-based vertex workflow integrating existing tracking and GenFit/Kalman components; achieved <strong>74.4% event reconstruction efficiency</strong> versus a 74.2% true-vertex reference in a controlled displaced-interaction simulation.</li>
+            <li>Developed simulation-based efficiency correction and iterative refinement, reducing global target-profile discrepancy from <strong>12.27% at iteration 1 to 1.30% at iteration 3</strong> in a simulation stress test.</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Detector Simulation &amp; Performance Evaluation</h3>
+          <p class="meta">Sep. 2019 - Mar. 2022 · Doctoral research</p>
+          <ul>
+            <li>Implemented an alternative HV-MAPS detector geometry in PandaRoot and benchmarked tracking, vertex resolution and event reconstruction against the baseline detector design.</li>
+            <li>The detector-design simulation showed <strong>2.8× higher D-meson reconstruction efficiency</strong> (3.33% to 9.26%) and <strong>44-52% smaller primary-vertex resolution widths</strong> across the three coordinate axes.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section aria-labelledby="education">
+        <h2 id="education">Education</h2>
+        <div class="education-entry">
+          <h3>Dr. rer. nat. (Ph.D.) in Physics</h3>
+          <p class="meta">Ruhr University Bochum, Germany · 2026</p>
+          <p>Dissertation: <em>Luminosity Determination with Restgas Background from the Target for the PANDA Experiment</em></p>
+        </div>
+        <div class="education-entry">
+          <h3>B.Sc. in Physics</h3>
+          <p class="meta">Nankai University, Tianjin, China · Sep. 2015 - Jun. 2019</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="early">
+        <h2 id="early">Earlier Research Experience</h2>
+        <div class="early-entry">
+          <h3>Institute of High Energy Physics, Chinese Academy of Sciences - BESIII</h3>
+          <p class="meta">Research Assistant · Jun. 2018 - Jul. 2019</p>
+          <p>Charm/D-meson analysis, Monte Carlo simulation and ROOT-based statistical analysis.</p>
+        </div>
+        <div class="early-entry">
+          <h3>Nankai University - BESIII</h3>
+          <p class="meta">Undergraduate Research Assistant · Sep. 2016 - Jul. 2019</p>
+          <p>Charmonium analysis, simulation and data processing.</p>
+        </div>
+        <div class="early-entry">
+          <h3>AMS-02 Project (CERN / MIT collaboration)</h3>
+          <p class="meta">Summer Research Assistant · Jun. 2017 - Sep. 2017</p>
+          <p>Detector simulation and tracker-resolution validation.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
