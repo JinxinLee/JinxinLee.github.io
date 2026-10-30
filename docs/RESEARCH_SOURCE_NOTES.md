@@ -1,5 +1,19 @@
 # Research source register
 
+## Metric clarification - 2026-10-31
+
+The latest owner-edited CV specifies that the <1% deviation compares the reconstructed interaction-density profile with simulation ground truth. Updated Software and Research accordingly, retaining the confirmed repeated-simulation summary scope. The owner also labels the PANDA Agent evaluation as a 59-question development benchmark; the website preserves its Gold v2.10 / Attempt 4 identity.
+
+## Owner CV update - 2026-10-30
+
+The current owner-edited professional CV supplies revised software implementation, final delivery and adoption-by-collaborators statements, the group repository links, and the <1% reconstructed-data/ground-truth comparison. These owner-provided statements were applied to the CV and corresponding pages; no independent adoption audit is claimed.
+
+The owner clarified on 2026-10-30 that the <1% value summarizes repeated simulation studies. It is described as a summary result without inferring a mean, maximum, RMS or a guarantee for every run. It is not substituted for the dissertation's 1.30% iteration-3 global profile discrepancy. At the owner's request on 2026-10-30, removed the historical iteration-by-iteration discrepancy text and chart from the Research page. The <1% repeated-simulation summary remains the displayed reconstruction-deviation result. Historical source values/figure assets are retained as records, not presented on the page. The 74.4% / 74.2% comparison remains a separate Research efficiency study.
+
+PANDA Agent's 98.98% Gold recall@10, 97.18% answer-point coverage and 100% citation integrity were checked against the local project's `evaluation/F6_A4_PRERELEASE_VALIDATION_RESULT.md`, A1 Gold table: 59 exposed Gold v2.10 questions, Attempt 4. The displayed numbers are historical benchmark measurements, not current-checkout or general production accuracy. Citation integrity describes reference validity.
+
+Detector performance remains simulation-scoped. The new owner CV reports up to approximately 50% better spatial resolution, approximately 10% better momentum resolution and 2.8 times baseline reconstruction efficiency. Research preserves the exact Table 6.6 coordinate widths and Table 6.4 efficiencies, with the momentum improvement scoped to the studied track samples; results from different stages are not combined into a universal detector guarantee.
+
 Reviewed 2026-10-29. Primary scientific source: Jinxin Li (2026), *Luminosity Determination with Restgas Background from the Target for the PANDA Experiment*, Ruhr University Bochum, `assets/pdf/thesis_revised.pdf`. Page numbers below distinguish printed pages from one-based PDF pages. The relevant complete pages were extracted and read, not inferred from earlier website text.
 
 ## Claims and definitions
