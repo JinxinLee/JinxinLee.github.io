@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software &amp; AI | Dr. Jinxin Li</title>
+  <meta name="description" content="Scientific software and AI engineering: PANDA Agent, LuminosityFit, particle reconstruction and detector simulation.">
+  <meta name="theme-color" content="#145b56">
+  <meta property="og:title" content="Software &amp; AI | Dr. Jinxin Li">
+  <meta property="og:description" content="Scientific software and AI engineering: PANDA Agent, LuminosityFit, particle reconstruction and detector simulation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jinxinlee.github.io/software.html">
+  <link rel="canonical" href="https://jinxinlee.github.io/software.html">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/vcard.css">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="page-top"><a class="wordmark" href="index.html" aria-label="Dr. Jinxin Li home">JL<span class="wordmark-dot">.</span></a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme" aria-pressed="false">☾</button></div>
+<main>
+  <aside class="sidebar" aria-label="Personal profile">
+    <div class="sidebar-info">
+      <div class="avatar-box" aria-hidden="true"><span class="initials">JL</span><span class="avatar-orbit"></span></div>
+      <div class="info-content"><p class="profile-eyebrow">PHYSICS · SOFTWARE · AI</p><h1 class="name">Dr. Jinxin Li</h1><p class="title">Experimental Particle Physicist &amp; Scientific Software Engineer</p></div>
+    </div>
+    <div class="sidebar-info_more">
+      <div class="separator"></div>
+      <ul class="contacts-list">
+        <li class="contact-item"><div class="icon-box" aria-hidden="true">@</div><div class="contact-info"><p class="contact-title">Email</p><a class="contact-link" href="mailto:jinxin@ep1.rub.de">jinxin@ep1.rub.de</a></div></li>
+        <li class="contact-item"><div class="icon-box" aria-hidden="true">⌖</div><div class="contact-info"><p class="contact-title">Based in</p><address>Göttingen, Germany</address></div></li>
+        <li class="contact-item"><div class="icon-box" aria-hidden="true">↗</div><div class="contact-info"><p class="contact-title">Background</p><p class="contact-link">Dr. rer. nat. in Physics</p></div></li>
+      </ul>
+      <div class="separator"></div>
+      <div class="profile-links"><a href="https://github.com/JinxinLee">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/jinxin-li-896450300">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      <a class="button sidebar-cv" href="professional-cv.html">View my CV <span aria-hidden="true">↗</span></a>
+      <p class="sidebar-note">Scientific curiosity.<br>Carefully validated software.</p>
+    </div>
+  </aside>
+  <div class="main-content" id="main-content" tabindex="-1">
+    <nav class="navbar" aria-label="Main navigation"><ul class="navbar-list"><li><a class="navbar-link" href="index.html">Home</a></li><li><a class="navbar-link" href="research.html">Research</a></li><li><a class="navbar-link active" aria-current="page" href="software.html">Software &amp; AI</a></li><li><a class="navbar-link" href="academic-work.html">Academic Work</a></li><li><a class="navbar-link" href="cv-overview.html">CV</a></li></ul></nav>
+    <article id="projects" aria-labelledby="projects-title" tabindex="-1">
+      <header><p class="eyebrow">SELECTED WORK</p><h2 class="h2 article-title" id="projects-title">Software &amp; AI</h2></header>
+      <p class="section-intro">C++ and Python software engineering grounded in experimental physics: maintaining and extending scientific frameworks, developing algorithms and integrating AI systems. The projects below highlight practical implementation, debugging and repeatable validation. Explore the scientific background on the <a href="research.html">Research page</a>.</p>
+      <div class="project-grid">
+        <section class="project-card agent-card" aria-labelledby="agent-project-title">
+          <header class="project-header"><div><p class="eyebrow">LOCAL RESEARCH PROTOTYPE · INDEPENDENT PROJECT · APR. 2026 — PRESENT</p><h3 id="agent-project-title">PANDA Agent</h3><p>AI assistant for scientific software &amp; research</p></div><a class="button" href="https://github.com/JinxinLee/PANDA_Agent">View repository <span aria-hidden="true">↗</span></a></header>
+          <div class="project-layout">
+            <div class="project-copy"><dl class="project-details"><dt>Purpose</dt><dd>Help new researchers and developers onboard, understand algorithms and troubleshoot issues across interdependent codebases, scientific publications and technical documentation.</dd><dt>Backend development</dt><dd>Designed and implemented Python workflows using LangGraph, FastAPI, PostgreSQL and Qdrant, combining hybrid dense/BM25 retrieval, evidence-grounded question answering and traceable source citations.</dd></dl><div class="tags"><span>AI agents</span><span>RAG</span><span>Hybrid retrieval</span><span>Evaluation</span></div><p class="project-crosslinks"><a href="research.html#interests">AI-assisted scientific computing →</a> · <a href="academic-work.html#dissertation">Scientific context</a></p></div>
+            <section class="project-evaluation"><h4>Benchmark design</h4><p>Designed human-reviewed benchmarks and systematic evaluation workflows to guide iterative optimization and assess retrieval quality, answer completeness and citation reliability.</p><div class="evaluation-heading"><h4>Evaluation results</h4><span>Attempt 4</span></div><ul class="evaluation-metrics"><li><strong>98.98%</strong><span>Gold recall@10</span></li><li><strong>97.18%</strong><span>Answer-point coverage</span></li><li><strong>100%</strong><span>Citation integrity</span></li></ul><p class="result-context">Results on a development benchmark of 59 questions (Gold v2.10).</p></section>
+          </div>
+        </section>
+        <section class="project-card" aria-labelledby="luminosityfit-project-title">
+          <header class="project-header"><div><p class="eyebrow">DOCTORAL WORK · MAR. 2022 — JUL. 2024</p><h3 id="luminosityfit-project-title">LuminosityFit</h3><p>C++ framework development &amp; delivery</p></div><div class="document-actions"><a class="button" href="https://github.com/panda-luminosity-detector-group/LuminosityFit">View repository <span aria-hidden="true">↗</span></a><a class="button" href="research.html#luminosity">Research context <span aria-hidden="true">→</span></a></div></header>
+          <div class="project-layout">
+            <div class="project-copy"><dl class="project-details"><dt>Problem</dt><dd>Handle realistic particle interaction distributions and beam conditions in an existing C++ luminosity-measurement framework.</dd><dt>Development &amp; delivery</dt><dd>Extended and maintained LuminosityFit through numerical algorithm development, debugging, software integration and validation. Completed final integration and validation, delivering the framework for use by the PANDA Collaboration.</dd></dl><div class="tags"><span>C++</span><span>Framework maintenance</span><span>Integration</span></div></div>
+            <section class="project-evaluation" aria-label="LuminosityFit evaluation"><h4>Validation approach</h4><p>Integrated reconstructed target distributions into an end-to-end reconstruction and fitting chain, then compared the result with simulated ground truth.</p><div class="evaluation-heading"><h4>Simulation results</h4></div><ul class="evaluation-metrics"><li class="metric-wide"><strong>(0.05 ± 0.07)%</strong><span>Relative luminosity deviation</span></li></ul><p class="result-context">Result of the integrated analysis chain under the studied simulation conditions. Dissertation, Table 9.2.</p></section>
+          </div><p class="project-crosslinks"><a class="text-link" href="research.html#luminosity">Physics research →</a> · <a class="text-link" href="academic-work.html#dissertation">Dissertation</a> · <a class="text-link" href="https://github.com/panda-luminosity-detector-group/LuminosityFit">GitHub ↗</a></p>
+        </section>
+        <section class="project-card" aria-labelledby="reconstruction-project-title">
+          <header class="project-header"><div><p class="eyebrow">DOCTORAL WORK · JUL. 2024 — APR. 2026</p><h3 id="reconstruction-project-title">Reconstruction</h3><p>Algorithm development &amp; implementation</p></div><div class="document-actions"><a class="button" href="https://github.com/panda-luminosity-detector-group/RestgasDetermination">View repository <span aria-hidden="true">↗</span></a><a class="button" href="research.html#reconstruction">Research context <span aria-hidden="true">→</span></a></div></header>
+          <div class="project-layout">
+            <div class="project-copy"><dl class="project-details"><dt>Problem</dt><dd>Reconstruct particle interactions outside the expected collision region, where standard reconstruction assumptions are insufficient.</dd><dt>Algorithm development</dt><dd>Designed a novel reconstruction workflow from initial concept to C++ implementation, integrating existing tracking and GenFit/Kalman components.</dd><dt>Delivery &amp; use</dt><dd>Validated and delivered the algorithm to the PANDA Collaboration, where it was adopted and used by other researchers.</dd></dl><div class="tags"><span>C++</span><span>Algorithm development</span><span>Simulation</span><span>Validation</span></div></div>
+            <section class="project-evaluation"><h4>Simulation validation</h4><p>Implemented the algorithm in C++, integrated it with existing reconstruction software and validated it against simulation ground truth.</p><div class="evaluation-heading"><h4>Validation result</h4></div><ul class="evaluation-metrics"><li class="metric-wide"><strong>&lt;1%</strong><span>Relative deviation between reconstructed interaction-density profile and simulated ground truth</span></li></ul><p class="result-context">Summary result from repeated simulation studies of the delivered reconstruction algorithm.</p></section>
+          </div><p class="project-crosslinks"><a class="text-link" href="research.html#reconstruction">Physics research →</a> · <a class="text-link" href="academic-work.html#dissertation">Dissertation</a> · <a class="text-link" href="https://github.com/panda-luminosity-detector-group/RestgasDetermination">GitHub ↗</a></p>
+        </section>
+        <section class="project-card" aria-labelledby="simulation-project-title">
+          <header class="project-header"><div><p class="eyebrow">DOCTORAL WORK · SEP. 2019 — MAR. 2022</p><h3 id="simulation-project-title">Detector Simulation</h3><p>Geometry modeling & performance evaluation</p></div><a class="button" href="research.html#detectors">Research context <span aria-hidden="true">→</span></a></header>
+          <div class="project-layout">
+            <div class="project-copy"><dl class="project-details"><dt>Implementation</dt><dd>Designed and implemented a replacement pixel-sensor configuration in the C++ simulation framework, including sensor geometry, physical parameters and dedicated simulation classes.</dd><dt>Comparative studies</dt><dd>Designed and conducted Monte Carlo studies across simulation scenarios, particle trajectories and reconstruction stages.</dd></dl><div class="tags"><span>PandaRoot</span><span>Monte Carlo</span><span>Performance analysis</span></div></div>
+            <section class="project-evaluation"><h4>Simulation validation</h4><p>Compared the alternative HV-MAPS configuration against the baseline detector design.</p><div class="evaluation-heading"><h4>Comparative results</h4></div><ul class="evaluation-metrics"><li><strong>~50%</strong><span>Better spatial resolution · up to</span></li><li><strong>~10%</strong><span>Better momentum resolution</span></li><li class="metric-wide"><strong>2.8×</strong><span>Baseline D-meson reconstruction efficiency · 9.26% vs. 3.33%</span></li></ul><p class="result-context">Simulation-based detector-design comparisons; individual results depend on the studied particle sample and reconstruction stage.</p></section>
+          </div><p class="project-crosslinks"><a class="text-link" href="research.html#detectors">Physics research →</a> · <a class="text-link" href="academic-work.html#dissertation">Dissertation</a></p>
+        </section>
+      </div>
+    </article>    <footer class="page-footer"><span>Dr. Jinxin Li · Göttingen, Germany</span><span>Built with care · Based on <a href="https://github.com/codewithsadee/vcard-personal-portfolio">vCard</a></span></footer>
+  </div>
+</main>
+<noscript><style>.theme-toggle{display:none}</style></noscript>
+</body>
+</html>
